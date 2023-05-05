@@ -31,6 +31,9 @@ section {
           transform: scale(1.25);
           transition: 150ms ease-in-out;
         }
+        &:active {
+          color: var(--startsquare);
+        }
       }
     }
   }
