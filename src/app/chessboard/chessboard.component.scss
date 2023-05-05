@@ -3,12 +3,12 @@
   flex-direction: row;
   &:nth-child(odd) {
     .field:nth-child(even) {
-      background-color: #0099ff;
+      background-color: var(--blacksquare);
     }
   }
   &:nth-child(even) {
     .field:nth-child(odd) {
-      background-color: #0099ff;
+      background-color: var(--blacksquare);
     }
   }
   .field {
@@ -17,6 +17,16 @@
     align-items: center;
     width: 75px;
     height: 75px;
-    background-color: #00ccff;
+    background-color: var(--whitesquare);
+    p {
+      font-family: var(--font);
+      font-size: 1.5rem;
+      cursor: pointer;
+      transition: 150ms ease-in-out;
+      &:hover {
+        transform: scale(1.25);
+        transition: 150ms ease-in-out;
+      }
+    }
   }
 }
