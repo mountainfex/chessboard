@@ -1,0 +1,22 @@
+.row {
+  display: flex;
+  flex-direction: row;
+  &:nth-child(odd) {
+    .field:nth-child(even) {
+      background-color: #0099ff;
+    }
+  }
+  &:nth-child(even) {
+    .field:nth-child(odd) {
+      background-color: #0099ff;
+    }
+  }
+  .field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75px;
+    height: 75px;
+    background-color: #00ccff;
+  }
+}

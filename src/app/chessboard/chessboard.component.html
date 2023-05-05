@@ -1,0 +1,9 @@
+<section>
+  <div>
+    <div class="row" *ngFor="let column of column; let i = index">
+      <div class="field" *ngFor="let row of row; let i = index">
+        {{ row }}{{ column }}
+      </div>
+    </div>
+  </div>
+</section>
