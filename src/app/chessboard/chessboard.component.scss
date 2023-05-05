@@ -1,31 +1,36 @@
-.row {
+section {
+  height: 100vh;
   display: flex;
-  flex-direction: row;
-  &:nth-child(odd) {
-    .field:nth-child(even) {
-      background-color: var(--blacksquare);
-    }
-  }
-  &:nth-child(even) {
-    .field:nth-child(odd) {
-      background-color: var(--blacksquare);
-    }
-  }
-  .field {
+  justify-content: center;
+  align-items: center;
+  .row {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 75px;
-    height: 75px;
-    background-color: var(--whitesquare);
-    p {
-      font-family: var(--font);
-      font-size: 1.5rem;
-      cursor: pointer;
-      transition: 150ms ease-in-out;
-      &:hover {
-        transform: scale(1.25);
+    &:nth-child(odd) {
+      .field:nth-child(even) {
+        background-color: var(--blacksquare);
+      }
+    }
+    &:nth-child(even) {
+      .field:nth-child(odd) {
+        background-color: var(--blacksquare);
+      }
+    }
+    .field {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 75px;
+      height: 75px;
+      background-color: var(--whitesquare);
+      p {
+        font-family: var(--font);
+        font-size: 1.5rem;
+        cursor: pointer;
         transition: 150ms ease-in-out;
+        &:hover {
+          transform: scale(1.25);
+          transition: 150ms ease-in-out;
+        }
       }
     }
   }
