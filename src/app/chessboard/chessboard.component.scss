@@ -1,6 +1,9 @@
 .highlight {
   color: var(--targetsquare);
 }
+.start {
+  color: var(--startsquare);
+}
 
 section {
   height: 100vh;
@@ -9,6 +12,7 @@ section {
   align-items: center;
   .column {
     display: flex;
+    flex-direction: row-reverse;
     &:nth-child(odd) {
       .field:nth-child(even) {
         background-color: var(--blacksquare);
