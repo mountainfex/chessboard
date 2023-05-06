@@ -6,7 +6,6 @@
         *ngFor="let row of row; let j = index"
         (click)="showPossibleMoves(row, column, $event, i, j)"
         [class.highlight]="checkIfPossible(i, j)"
-        [routerLink]="['/start=3']"
       >
         <p>{{ column }}{{ row }}</p>
       </div>

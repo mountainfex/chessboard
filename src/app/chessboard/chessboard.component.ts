@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-chessboard',
@@ -15,7 +15,7 @@ export class ChessboardComponent {
   newRow: number | null = null;
   newCol: number | null = null;
 
-  constructor(private activatedRoute: ActivatedRoute, private router: Router) {}
+  constructor(private router: Router) {}
 
   showPossibleMoves(
     possibleRow: number,
@@ -24,8 +24,9 @@ export class ChessboardComponent {
     i: number,
     j: number
   ) {
-    this.activatedRoute.paramMap.pipe();
-    this.router.navigate(['/start=' + this.column[i] + this.row[j]]);
+    this.router.navigateByUrl(
+      'chessboard/start/' + this.column[i] + this.row[j]
+    );
 
     this.previousEvent?.classList.remove('start');
     this.previousEvent = event.target as HTMLElement;
