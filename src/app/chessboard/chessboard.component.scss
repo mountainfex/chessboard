@@ -1,9 +1,13 @@
+.highlight {
+  color: var(--targetsquare);
+}
+
 section {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  .row {
+  .column {
     display: flex;
     &:nth-child(odd) {
       .field:nth-child(even) {
@@ -30,9 +34,6 @@ section {
         &:hover {
           transform: scale(1.25);
           transition: 150ms ease-in-out;
-        }
-        &:active {
-          color: var(--startsquare);
         }
       }
     }
