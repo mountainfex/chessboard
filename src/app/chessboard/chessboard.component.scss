@@ -10,34 +10,38 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  .column {
+  .row {
     display: flex;
-    flex-direction: row-reverse;
-    &:nth-child(odd) {
-      .field:nth-child(even) {
-        background-color: var(--blacksquare);
-      }
-    }
-    &:nth-child(even) {
-      .field:nth-child(odd) {
-        background-color: var(--blacksquare);
-      }
-    }
-    .field {
+    flex-direction: row;
+    .column {
       display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 75px;
-      height: 75px;
-      background-color: var(--whitesquare);
-      p {
-        font-family: var(--font);
-        font-size: 1.5rem;
-        cursor: pointer;
-        transition: 150ms ease-in-out;
-        &:hover {
-          transform: scale(1.25);
+      flex-direction: column-reverse;
+      &:nth-child(odd) {
+        .field:nth-child(even) {
+          background-color: var(--whitesquare);
+        }
+      }
+      &:nth-child(even) {
+        .field:nth-child(odd) {
+          background-color: var(--whitesquare);
+        }
+      }
+      .field {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 75px;
+        height: 75px;
+        background-color: var(--blacksquare);
+        p {
+          font-family: var(--font);
+          font-size: 1.5rem;
+          cursor: pointer;
           transition: 150ms ease-in-out;
+          &:hover {
+            transform: scale(1.25);
+            transition: 150ms ease-in-out;
+          }
         }
       }
     }
