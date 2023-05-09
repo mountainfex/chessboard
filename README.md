@@ -1,4 +1,4 @@
-ENGLISH below
+German
 
 1. Arrays mit Row und Column erstellt, woraus die ngFor das Schachbrett generiert
 
@@ -6,11 +6,11 @@ ENGLISH below
 
 3. Mit NG-Class werden die beiden scss-klassen "highlight", für die möglichen Züge, und "start", für den Startpunkt, den entsprechenden Containern zugeordnet, wenn die funktionen "checkIfPossible" sowie "checkIfStartParam" den Wert "true" ausgeben.
 
-4. ngOnInit sollte den Startpunkt anhand des QueryParameters welcher mit Zeile 24 ausgelesen wird ändern, dies funktionier leider nicht mehr. Mit dem Debugger ist ersichtlich dass es an this.queryStart = params['start'];, welcher nach Änderung des Parameters "undefined" ausgibt, liegt - eine Lösung habe ich dafür nun leider nicht mehr gefunden - damit beschäftige ich mich jedoch derzeit.
+4. ngOnInit sollte den Startpunkt anhand des QueryParameters welcher mit Zeile 24 ausgelesen wird ändern, dies funktionier leider nicht mehr. Mit dem Debugger ist ersichtlich dass es an this.queryStart = params['start'];, welcher nach Änderung des Parameters "undefined" ausgibt, liegt - eine Lösung habe ich dafür nun leider nicht mehr gefunden - damit beschäftige ich mich jedoch derzeit. <br>
+<br>
+<br>
 
-
-
-
+Englisch
 1. Arrays with row and column are created, from which the ngFor generates the chessboard.
 
 2. showpossiblemoves passes the position of the "click", from this the function calculatePossibleMoves calculates the possible moves and sets the URL parameter.
