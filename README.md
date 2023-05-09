@@ -1,5 +1,5 @@
-German
-
+# <b>A short explanation of my code</b>
+<b>German</b>
 1. Arrays mit Row und Column erstellt, woraus die ngFor das Schachbrett generiert
 
 2. Durch showpossiblemoves wird die jeweilige Position des "clicks" übergeben, daraus werden dann mit Hilfe der Funktion calculatePossibleMoves die möglichen Züge brechnet sowie der URL Parameter gesetzt.
@@ -8,9 +8,8 @@ German
 
 4. ngOnInit sollte den Startpunkt anhand des QueryParameters welcher mit Zeile 24 ausgelesen wird ändern, dies funktionier leider nicht mehr. Mit dem Debugger ist ersichtlich dass es an this.queryStart = params['start'];, welcher nach Änderung des Parameters "undefined" ausgibt, liegt - eine Lösung habe ich dafür nun leider nicht mehr gefunden - damit beschäftige ich mich jedoch derzeit. <br>
 <br>
-<br>
 
-Englisch
+<b>English</b>
 1. Arrays with row and column are created, from which the ngFor generates the chessboard.
 
 2. showpossiblemoves passes the position of the "click", from this the function calculatePossibleMoves calculates the possible moves and sets the URL parameter.
